@@ -1,0 +1,24 @@
+{% include "head.html" %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<form method="POST">
+			{% csrf_token %}
+			<h1 style="text-align: center;">Update Data</h1>
+			<input type="text" name="name" value="{{modifydata.name}}" placeholder="Enter Your Name" class="form-control">
+			<br>
+			<input type="number" name="mobno" value="{{modifydata.mobno}}" placeholder="Enter Your Phone No" class="form-control">
+			<br>
+			<select class="form-control" name="city" value="{{modifydata.city}}" >
+				<option>-------Select City--------</option>
+				{% for c in citylist %} -->
+				<option>{{c}}</option>
+				{%endfor%}
+			</select>
+			<br>
+			<input type="submit" value="UpdateData" class="form-control btn-success " name="">
+		</form>
+		</div>
+	</div>
+</div>
+{% include "footer.html" %}

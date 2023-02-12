@@ -1,0 +1,53 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Party </title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+	  <div class="row">
+		  <div class="col-sm-2">
+			<img src="../static/1.png"  width="100%">
+			  <!-- <img src="{% static "images/1.png"  %} alt=""> -->
+		  </div>
+		  <div class="col-sm-10">
+			  <h1 style="font-size: 400%; text-align: center; font-family: Brush Script MT;">
+				Party Person
+			  </h1>
+		  </div>
+	  </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a class="nav-link btn-info" href="/">---HOME---</a>
+	  <button class="navbar-toggler" data-toggle="collapse" data-target="#CB">
+		  <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div id="CB" class="collapse navbar-collapse">
+		  <ul class="navbar-nav" style=" margin-left: 40%;">
+			  
+			  <li class="nav-item">
+				  <a class="nav-link h5 btn-success" href="/insert/">Add Invite</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				  <a class="nav-link btn-info  h5" href="/viewall/">View All Invite</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				  <a class="nav-link btn-danger  h5" href="/delte/">Delete/update Invite</a>
+			  </li>
+
+		  </ul>
+	  </div>
+  </nav>
